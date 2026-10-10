@@ -18,4 +18,14 @@ int main1()
 	double res1 = pow(9.7, b);
 	double y = e + res1;
 	printf("x = %.f\ny = % 6.2f", x, y);
+	
+	int A = (int)a;
+	int B = (int)b;
+	int C = (int)c;
+
+	int ab = ((A % 2 == 0) != (B % 2 == 0));
+	int abc = (A % 3 == 0) && (B % 3 == 0) && (C % 3 == 0);
+
+	printf("Условие  a выполнено: %d\n", ab);
+	printf("Условие  b выполнено: %d\n", abc);
 }
